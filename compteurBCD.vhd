@@ -1,31 +1,18 @@
 ----------------------------------------------------------------------------------
--- Company: 
 -- Engineer: Khawla BOUGHERARA
 -- 
--- Create Date:    16:54:21 12/13/2024 
--- Design Name: 
--- Module Name:    compteurBCD - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Create Date:    15:13:21 27/04/2025
+-- Module Name:    compteurBCD- Behavioral 
+-- Project Name: BCD to 7-Segment 2-Digit Display in VHDL
+-- Target Devices: FPGA
+-- Tool versions: XILINX ISE
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
----- Uncomment the following library declaration if instantiating
----- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+
 
 entity compteurBCD is
     Port ( clk : in  STD_LOGIC;
