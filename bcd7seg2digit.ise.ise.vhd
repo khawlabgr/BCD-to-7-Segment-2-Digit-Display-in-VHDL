@@ -2,14 +2,12 @@
 
 -- Engineer: Khawla BOUGHERARA
 -- 
--- Create Date:    16:22:44 27/04/2025 
--- Design Name: 
+-- Create Date:    16:22:44 27/04/2025  
 -- Module Name:    bcd7seg2digit - Behavioral 
 -- Project Name:  BCD to 7-Segment 2-Digit Display in VHDL
 -- Target Devices: FPGA
 -- Tool versions: XILINX ISE
 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
