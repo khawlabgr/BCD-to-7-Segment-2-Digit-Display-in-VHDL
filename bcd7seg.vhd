@@ -1,0 +1,42 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    15:13:21 12/13/2024 
+-- Design Name: 
+-- Module Name:    bcd7seg - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+---- Uncomment the following library declaration if instantiating
+---- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity bcd7seg is
+    Port ( x : in  STD_LOGIC_VECTOR (3 downto 0);
+           s : out  STD_LOGIC_VECTOR (6 downto 0));
+end bcd7seg;
+
+architecture Mbcd7seg of bcd7seg is
+type rom is array (9 downto 0) of std_logic_vector(6 downto 0);
+signal bcd:rom:= ("1111110","0110000","1101101","1111001","0110011","1011011","1011111","1110000","1111111","1111011");
+begin
+s <= bcd(conv_integer(x));
+
+end Mbcd7seg;
+
